@@ -1,9 +1,9 @@
-.Navbar{
+/* .Navbar{
     background-color:#FFA07A;
     width: 100%;
     height: 80px;
     display: flex;
-  }
+  } */
   .Navbar .LadoIzquierdo{
     flex: 50%;
     display: flex;
