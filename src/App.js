@@ -1,14 +1,14 @@
 
 import './App.css';
 import React from 'react';
-import Navbarx from './Components/Navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       
-      <Navbarx/>
+      <Navbar/>
       
       <ItemListContainer
       name = 'Pablo'

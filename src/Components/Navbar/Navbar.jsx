@@ -4,7 +4,7 @@ import './Navbar.css';
 import '../CartWidget/CartWidget'
 import CartWidget from '../CartWidget/CartWidget';
 
-const  Navbarx = () => {
+const  Navbar = () => {
   return (
  
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
@@ -33,4 +33,4 @@ const  Navbarx = () => {
 
         )
 }
-export default Navbarx;
+export default Navbar;
