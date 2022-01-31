@@ -14,9 +14,9 @@ const ItemCount = () => {
   }
 
   return (
-    <div className='itemCount'>
-      <button onClick={handleCounterUp}>+</button>
+    <div >
       <button onClick={handleCounterDown}>-</button>
+      <button onClick={handleCounterUp}>+</button>
       <p>{stock}</p>
     </div>
   );
