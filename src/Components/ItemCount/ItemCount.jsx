@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ItemCount.css'
 
 const ItemCount = () => {
 
@@ -14,7 +15,7 @@ const ItemCount = () => {
   }
 
   return (
-    <div >
+    <div>
       <button onClick={handleCounterDown}>-</button>
       <button onClick={handleCounterUp}>+</button>
       <p>{stock}</p>

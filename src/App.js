@@ -2,20 +2,19 @@
 import './App.css';
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-import CardProductos from './Components/Card/Card';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Home from './pages/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      
-      <Navbar/>
+    <BrowserRouter>
+       <Navbar/>
+       <Switch>
+        <Route exact path="/" component={Home}/>
+       </Switch>
+    </BrowserRouter>
     
-      <ItemListContainer name = 'Pablo'/>
-      
-      <CardProductos/>
-
-    </div>
   );
 }
 export default App;
