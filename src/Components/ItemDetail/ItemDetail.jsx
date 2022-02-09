@@ -1,30 +1,26 @@
 import React, { Fragment } from "react";
-import './Item.css'
-import { Card, Col } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import './ItemDetail.css'
+import { Card, Col, Button } from 'react-bootstrap';
 
 
-const Item = ({item}) => {
+const ItemDetail = ({title, image, description, id}) => {
 
 return (
-<Fragment>
-  <Col key={item.id} className="box" sm="12" md="6" lg="4">
-      <Card >
-        <Link className="nav-link" to={`/ItemDetailContainer/${item.id}`}>
-          <Card.Img variant="top" src={item.image} />
-        </Link>
-        <Card.Body>
-          <Card.Title className="card--tittle">
-            {item.title}
-          </Card.Title>
-          <Card.Text className="card--description">
-            {item.description}
-          </Card.Text>
-        </Card.Body>
+<Fragment>    
+    <Col key={id} className="box" sm="12" md="6" lg="3">
+      <Card>
+        <Card.Img variant="top" src={image} /> 
+          <Card.Body> 
+            <Card.Title className="titleItemDetail">{title}</Card.Title>
+            <Card.Text className="detalleItemDetail">
+              {description}
+            </Card.Text>
+            <Button className="buttonItemDetail" variant="primary">COMPRAR</Button>
+          </Card.Body>
       </Card>
   </Col>
   </Fragment>
   )
 };
 
-export default Item;
+export default ItemDetail;

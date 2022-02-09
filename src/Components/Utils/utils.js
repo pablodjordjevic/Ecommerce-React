@@ -1,6 +1,6 @@
 export const productList = [
     {
-      id: 0,
+      id: "0",
       title: "Base Eterna",
       description: "Esta es la descripción 0",
       price: 250,
@@ -8,7 +8,7 @@ export const productList = [
       categoria: 2,
     },
     {
-      id: 1,
+      id: "1",
       title: "Pinceles",
       description: "Esta es la descripción 1",
       price: 200,
@@ -16,7 +16,7 @@ export const productList = [
       categoria: 0,
     },
     {
-      id: 2,
+      id: "2",
       title: "Arcilla",
       description: "Esta es la descripción 2",
       price: 450,
@@ -24,7 +24,7 @@ export const productList = [
       categoria: 1,
     },
     {
-      id: 3,
+      id: "3",
       title: "Cintas",
       description: "Esta es la descripción 3",
       price: 500,
@@ -32,7 +32,7 @@ export const productList = [
       categoria: 4,
     },
     {
-      id: 4,
+      id: "4",
       title: "Pintura para tela",
       description: "Esta es la descripción 4",
       price: 220,
@@ -40,7 +40,7 @@ export const productList = [
       categoria: 2,
     },
     {
-      id: 5,
+      id: "5",
       title: "Bochas telgopor",
       description: "Esta es la descripción 5",
       price: 200,
