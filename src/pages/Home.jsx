@@ -1,15 +1,16 @@
-import React, {Fragment} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from '../Components/ItemListContainer/ItemListContainer';
+import { Fragment } from 'react';
+import * as React from 'react';
+import ImgHome from '../Components/ImgHome/ImgHome';
+import imgHeroHome from '../image/hero.png';
 
 
 function Home() {
-
-    return (
-        <Fragment>
-            <ItemListContainer/>
-        </Fragment>
-    );
+  return(
+    <Fragment>
+        <ImgHome imageback={imgHeroHome} />
+    </Fragment>
+  )
 }
+
 
 export default Home;
