@@ -1,15 +1,13 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHeart, faShoppingCart, faUserAlt} from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 
 
 
 const CartWidget = () => {
     return (
-    <div>
+    <div className='icons'>
         <FontAwesomeIcon icon={faShoppingCart}/>
-        <FontAwesomeIcon icon={faUserAlt}/>  
-        <FontAwesomeIcon icon={faHeart}/>
     </div>
     )
 }

@@ -1,36 +1,33 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Fragment } from 'react';
+import { Button,Card,Col } from 'react-bootstrap';
+import './Item.css';
 
 const Item = ({product}) =>  {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image= {product.image}
-          alt={product.title}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {product.title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {product.description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Ver mas
-        </Button>
-      </CardActions>
-    </Card>
+   
+  <Fragment>    
+    <Col key={product.id} className="box" sm="12" md="6" lg="3">
+      <Card>
+        <Card.Img variant="top" src={product.image} /> 
+          <Card.Body> 
+            <Card.Title className="titleItemDetail">{product.title}</Card.Title>
+            <Card.Text className="detalleItemDetail">
+              {product.description}
+            </Card.Text>
+            <Button className="buttonItemDetail" variant="primary">COMPRAR</Button>
+          </Card.Body>
+      </Card>
+  </Col>
+        
+ 
+  </Fragment>
   );
 }
 
 export default Item;
+
+
+
+
+

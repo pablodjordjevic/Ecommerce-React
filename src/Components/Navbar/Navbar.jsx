@@ -2,35 +2,30 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import '../CartWidget/CartWidget'
+import { Navbar,Container,Nav  } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import LogoCrearte from '../../image/crearte-logo_logo.svg'
 import CartWidget from '../CartWidget/CartWidget';
 
-const  Navbar = () => {
+
+const  NavBar = () => {
   return (
  
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">NOMBRE TIENDA / LOGO</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Productos</a>
-        </li>
-      </ul>
-      
-      <span class="navbar-text" >
-        <CartWidget/>
-      </span>
-    </div>
-  </div>
-</nav>
+<Navbar expand="lg">
+  <Container>
+    <Link to="/"><img src={LogoCrearte} className="imgNavbar" alt="CrearteLogo"/></Link>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#link">Productos</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+    <CartWidget/>
+  </Container>
+</Navbar>
 
 
         )
 }
-export default Navbar;
+export default NavBar;
