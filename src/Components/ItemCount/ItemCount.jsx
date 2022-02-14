@@ -15,11 +15,13 @@ const ItemCount = () => {
   }
 
   return (
-    <div>
-      <button onClick={handleCounterDown}>-</button>
-      <button onClick={handleCounterUp}>+</button>
-      <p>{stock}</p>
-    </div>
+   
+      <div className='count-style'>
+        <button className='symbol-style' onClick={handleCounterDown}>-</button>
+        <p>{stock}</p>
+        <button className='symbol-style' onClick={handleCounterUp}>+</button>
+      </div>
+    
   );
 }
 

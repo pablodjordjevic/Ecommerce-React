@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import './ItemDetail.css'
 import { Card, Col, Button } from 'react-bootstrap';
+import ItemCount from '../ItemCount/ItemCount';
 
-
-const ItemDetail = ({title, image, description, id}) => {
+const ItemDetail = ({title, image, description, id,price}) => {
 
 return (
 <Fragment>    
@@ -15,6 +15,8 @@ return (
             <Card.Text className="detalleItemDetail">
               {description}
             </Card.Text>
+            <ItemCount />
+            <p className="price">${price}</p>
             <Button className="buttonItemDetail" variant="primary">COMPRAR</Button>
           </Card.Body>
       </Card>

@@ -4,6 +4,8 @@ import { Button,Card,Col } from 'react-bootstrap';
 import './Item.css';
 import {Link} from 'react-router-dom';
 
+
+
 const Item = ({product}) =>  {
   return (
    
